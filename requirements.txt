@@ -1,4 +1,6 @@
-numpy==0.22.1
+pandas
+networkx
+gensim
 matplotlib
 scipy
 scikit-learn
