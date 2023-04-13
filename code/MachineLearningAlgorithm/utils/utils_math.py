@@ -44,7 +44,7 @@ def sampling(mode, x_train, y_train):
         x_train, y_train = TomekLinks().fit_sample(x_train, y_train)
     else:
         # print('|*** Technique for sampling : combine oversampling  and under sampling ***|\n')
-        x_train, y_train = SMOTETomek(random_state=42).fit_sample(x_train, y_train)
+        x_train, y_train = SMOTETomek(random_state=42).fit_resample(x_train, y_train)
 
     # print(sorted(Counter(y_train).items()))
     return x_train, y_train
